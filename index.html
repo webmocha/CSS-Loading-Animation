@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>CSS Loading Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div id="container">
-      <button id="sim1" data-delay="10">Instant Response</button>
-      <button id="sim2" data-delay="550">550ms Response</button>
-      <button id="sim3" data-delay="1250">1250ms Response</button>
-      <button id="sim4" data-delay="3500">3500ms Response</button>
-      <button id="sim5" data-delay="10000">Timeout 5000ms</button>
-      <button id="reset">Reset</button>
-      <div id="loadStatus"></div>
+    <div id="container" class="pure-g">
+      <button id="sim1" data-delay="10" class="pure-u-1 pure-button pure-button-primary">Instant Response</button>
+      <button id="sim2" data-delay="550" class="pure-u-1 pure-button pure-button-primary">550ms Response</button>
+      <button id="sim3" data-delay="1250" class="pure-u-1 pure-button pure-button-primary">1250ms Response</button>
+      <button id="sim4" data-delay="3500" class="pure-u-1 pure-button pure-button-primary">3500ms Response</button>
+      <button id="sim5" data-delay="10000" class="pure-u-1 pure-button pure-button-primary">Timeout 5000ms</button>
+      <button id="reset" class="pure-u-1 pure-button">Reset</button>
+      <div id="loadStatus" class="pure-u-1"></div>
     </div>
     <script src="simulator.js"></script>
   </body>

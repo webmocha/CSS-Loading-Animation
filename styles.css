@@ -2,12 +2,13 @@
   width: 300px;
   height: 500px;
   margin: auto;
-  background-color: #90a8e9;
+  background-color: rgb(36, 154, 201);
   border-radius: 12px;
-  padding: 30px;
+  padding: 60px;
+  font-family: Tahoma, Geneva, sans-serif;
 
   background-size: 100% 0%;
-  background-image: linear-gradient(#b0c8f9, #8098d9);
+  background-image: linear-gradient(rgb(76, 194, 238), rgb(70, 190, 235));
   background-position: 0% 100%;
   background-repeat: no-repeat;
   transition-property: background-size;
@@ -39,26 +40,31 @@ body {
 }
 
 #container button {
-  display: block;
-  margin: auto;
   margin-top: 20px;
+  color: white;
+  background-color: rgb(46, 164, 211);
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-#reset {
-  border: 1px solid #902020;
-  background-color: #400000;
-  color: #ffaabb;
+#container button:hover, #container button:focus {
+  background-color: rgb(60, 179, 231);
+  background-image: none;
 }
 
 #loadStatus {
   display: none;
+  margin: auto;
   margin-top: 100px;
   color: white;
   text-align: center;
-  font-size: 2em;
+  width: 100%;
+  font-size: 1.2em;
   font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #loadStatus.load-complete {
   display: inherit;
 }
+
